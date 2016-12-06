@@ -1,0 +1,30 @@
+{
+  "services": {
+    "name": "personalization",
+    "version": "v1",
+    "style": "RPC"
+  },
+  "models": {
+    "viewsByCustomerModel": "./models/viewsByCustomerModel",
+    "viewsByProductModel": "./models/viewsByProductModel"
+  },
+  "bus": {
+    "engines": {
+      "local": {
+        "handler": "./local"
+      },
+      "amqp": {
+        "handler": "./amqp",
+        "url": "amqp://bus"
+      }
+    },
+    "channels": {
+      "products": {
+        "name": "PRODUCTS",
+        "engine": "amqp"
+      }
+    }
+  },
+  "maxViewByCustomer": 10,
+  "separationBetweenSessionsInMinutes": 30
+}
