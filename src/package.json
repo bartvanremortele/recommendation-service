@@ -1,7 +1,7 @@
 {
-  "name": "micro-personalization-service",
+  "name": "micro-recomendation-service",
   "version": "0.1.0",
-  "description": "A personalization service.",
+  "description": "A recomendation service.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ncornag/micro-personalization-service.git"
+    "url": "https://github.com/ncornag/micro-recomendation-service.git"
   },
   "author": "Nicolás Cornaglia Schlieman",
   "license": "OSL-3.0",
