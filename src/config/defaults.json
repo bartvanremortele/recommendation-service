@@ -25,6 +25,11 @@
       }
     }
   },
+  "cache": {
+    "alsoViewed": 3600000
+  },
+  "productInfoServiceName": "catalog:product.info",
   "maxViewByCustomer": 10,
-  "separationBetweenSessionsInMinutes": 30
+  "separationBetweenSessionsInMinutes": 30,
+  "relatedLimit": 10
 }
