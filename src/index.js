@@ -7,6 +7,6 @@ base.utils.loadModulesFromKey('models');
 base.utils.loadModulesFromFolder('listeners');
 
 // Add operations
-// base.services.addOperationsFromFolder();
+base.services.addOperationsFromFolder();
 
 module.exports = base;
