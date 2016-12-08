@@ -1,11 +1,10 @@
 const base = require('microbase')();
 
 // Register model(s)
-require(base.config.get('models:viewsByCustomerModel'))(base);
-require(base.config.get('models:viewsByProductModel'))(base);
+base.utils.loadModulesFromKey('models');
 
 // Add Product viewed listener
-require(`${base.config.get('rootPath')}/listeners/product.viewed.js`)(base);
+base.utils.loadModulesFromFolder('listeners');
 
 // Add operations
 // base.services.addOperationsFromFolder();

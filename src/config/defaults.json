@@ -5,8 +5,8 @@
     "style": "RPC"
   },
   "models": {
-    "viewsByCustomerModel": "./models/viewsByCustomerModel",
-    "viewsByProductModel": "./models/viewsByProductModel"
+    "ViewsByCustomer": "./models/viewsByCustomerModel",
+    "ViewsByProduct": "./models/viewsByProductModel"
   },
   "bus": {
     "engines": {

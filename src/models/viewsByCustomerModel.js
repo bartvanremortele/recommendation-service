@@ -1,5 +1,6 @@
-function modelFactory(base) {
-  if (base.logger.isDebugEnabled()) base.logger.debug('[db] registering model ViewsByCustomer');
+function modelFactory(base, configKeys) {
+  const modelName = configKeys[configKeys.length - 1];
+  if (base.logger.isDebugEnabled()) base.logger.debug(`[db] registering model '${modelName}'`);
 
   const viewsSchema = base.db.Schema({
     date: { type: Date, required: true },
@@ -25,7 +26,7 @@ function modelFactory(base) {
     return obj;
   });
 
-  const model = base.db.model('ViewsByCustomer', schema);
+  const model = base.db.model(modelName, schema);
 
   // Add the model to mongoose
   return model;
