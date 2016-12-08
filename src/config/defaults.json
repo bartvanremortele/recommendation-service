@@ -1,6 +1,6 @@
 {
   "services": {
-    "name": "personalization",
+    "name": "recomendation",
     "version": "v1",
     "style": "RPC"
   },
