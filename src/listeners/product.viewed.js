@@ -8,9 +8,9 @@ function opFactory(base) {
     // Save history
     base.db.models.ViewsByCustomer
       .findOneAndUpdate(
-        { _id: data.userId },
+        { _id: data.customerId },
         {
-          $setOnInsert: { _id: data.userId },
+          $setOnInsert: { _id: data.customerId },
           $push: {
             views: {
               $each: [{ date: data.date, pid: data.productId }],
