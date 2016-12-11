@@ -10,7 +10,6 @@ function modelFactory(base, configKeys) {
   // The root schema
   const schema = base.db.Schema({
     _id: { type: String, required: true }, // Defaults doesn't work with upserts so the id is generated on insert
-    uid: { type: String, required: true },
     views: [viewsSchema]
   }, { _id: false, minimize: false, timestamps: false, versionKey: false });
 
