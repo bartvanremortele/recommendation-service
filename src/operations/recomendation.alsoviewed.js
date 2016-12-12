@@ -1,5 +1,5 @@
 /**
- * ## `recomendation.alsoviewed` operation factory
+ * ## `recommendation.alsoviewed` operation factory
  *
  * Get Products also viewed by other cutomers while viewing a Product
  *

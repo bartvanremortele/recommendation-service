@@ -1,4 +1,4 @@
-# Recomendation Service
+# Recommendation Service
 
 Ecommerce Customer service, part of the [microbase](http://microbase.io) 
 ecosystem.

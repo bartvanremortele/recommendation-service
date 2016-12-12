@@ -1,7 +1,7 @@
 {
-  "name": "micro-recomendation-service",
+  "name": "micro-recommendation-service",
   "version": "0.1.0",
-  "description": "A recomendation service.",
+  "description": "A recommendation service.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ncornag/micro-recomendation-service.git"
+    "url": "https://github.com/ncornag/micro-recommendation-service.git"
   },
   "author": "Nicolás Cornaglia Schlieman",
   "license": "OSL-3.0",

@@ -72,7 +72,7 @@ function opFactory(base) {
                         { passRawResult: true }
                       );
                   })
-                  .catch(error => base.logger.error(`[recomendation] ${error}`));
+                  .catch(error => base.logger.error(`[recommendation] ${error}`));
               }
             } else {
               break;
@@ -80,7 +80,7 @@ function opFactory(base) {
           }
         }
       })
-      .catch(error => base.logger.error(`[recomendation] ${error}`));
+      .catch(error => base.logger.error(`[recommendation] ${error}`));
   };
 
   const productsChannel = base.config.get('bus:channels:products:name');

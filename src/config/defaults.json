@@ -1,6 +1,6 @@
 {
   "services": {
-    "name": "recomendation",
+    "name": "recommendation",
     "version": "v1",
     "style": "RPC"
   },
