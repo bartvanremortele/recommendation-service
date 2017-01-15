@@ -8,7 +8,7 @@
  */
 function opFactory(base) {
   const relatedLimit = base.config.get('relatedLimit');
-  const productInfoServiceName = base.config.get('productInfoServiceName');
+  const productInfoURI = base.config.get('services:uris:product.info');
   const op = {
     cache: {
       options: {
@@ -29,7 +29,7 @@ function opFactory(base) {
           const promises = doc.related.slice(0, limit).map(productData => {
             return base.services
               .call({
-                name: productInfoServiceName
+                name: productInfoURI
               }, {
                 id: productData.pid, fields: '-variants'
               })
