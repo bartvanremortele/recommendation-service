@@ -4,12 +4,12 @@
     "version": "v1",
     "style": "RPC",
     "uris": {
-      "product.info": "catalog:product.info",
+      "product.info": "catalog:product.info"
     }
   },
   "models": {
-    "ViewsByCustomer": "./models/viewsByCustomerModel",
-    "ViewsByProduct": "./models/viewsByProductModel"
+    "ViewsByCustomer": "${servicePath}/models/viewsByCustomerModel",
+    "ViewsByProduct": "${servicePath}/models/viewsByProductModel"
   },
   "bus": {
     "engines": {
