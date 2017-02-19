@@ -4,7 +4,8 @@
   },
   "transports": {
     "http": {
-      "port": "3006"
+      "port": "3006",
+      "shutdownTimer": 1
     }
   },
   "db": {
